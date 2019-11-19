@@ -119,8 +119,7 @@ nav.nav{
   min-height: 25em;
   text-transform: uppercase;
   margin: 0 auto;
-  min-width: 50em;
-  width:100%;
+  width:90%;
   position: absolute;
   top:20%;
   left:54.7%;
@@ -234,7 +233,7 @@ section.main article img{
   padding-left: 30px;
 }
  h2{
-  padding-top: 2em;
+  /* padding-top: 2em; */
   color:#000;
   font-size: 2.5em;
   text-transform: uppercase;
@@ -467,11 +466,8 @@ footer .footer_section{
   color:var(--primary);
 }
 input[type="text"] {
-  padding-right: -5px;
-  min-height: 38px;
   max-height: 71px;
   border: none;
-  font-size: 1.2em;
   font-family: 'Open Sans';
 }
 .footer_left span{
@@ -528,75 +524,25 @@ footer small{
   text-align: center;
 }
 
+form ul{
+  display: inline-block;
+  padding: 3%;
+}
+form ul li{
+  float: left;
 
-
-/*
-======================================================================== */
-
-/* Responsive Section */
-
-
-@media only screen and (min-width: 35em) {
-  
+}
+form ul li input{
+  padding:10px;
+}
+form ul li .btn{
+  margin: 0;
+  max-width: 10em;
+  width: 100%;
+  text-align: center;
+  border: 2.5px solid var(--primary);
+  padding: 0px 5px;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-/*}
 
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
-   /* -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
 
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-  pre {
-    white-space: pre-wrap !important;
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
- */

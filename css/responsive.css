@@ -1,9 +1,4 @@
-/* Medium Layout: 1280px. */
-@media only screen and (min-width: 992px) and (max-width: 1200px) { 
-  
-    
-}
-@media all and (max-width:1080px){
+@media all and (max-width:1081px){
     .navbar{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -39,7 +34,7 @@
         
         transform: translate(-50%);
         position: absolute;
-        top: 13%;
+        top: 25%;
         left: 50%;
         transition: tr;
         background: #000;
@@ -49,21 +44,332 @@
     nav.nav{
         display: none;
     }
+    .expert_trainers {
+        padding: 4em 4em 8em 4em;
+    }
 
 }
-/* Tablet Layout: 768px. */
-@media only screen and (min-width: 768px) and (max-width: 991px) { 
- 
-    
+@media all and (min-width:768px) and (max-width:990px) {
+
+    .order_now {
+        background-image: none;
+    }
+
+    .form {
+        padding: 0% 5% 0% 5%;
+    }
+
+    section.main article img {
+        max-width: 18em;
+    }
+
+    h2 {
+
+        font-size: 2em;
+    }
+
+    .welcome {
+        padding: 0% 0% 0% 5%;
+        top: -7%;
+    }
+
+    apps.features {
+        padding: 0em;
+    }
+
+    .title {
+        padding: 5% 0% 0% 3%;
+    }
+
+    .contract_article {
+        height: 9em;
+    }
+
+    section.features {
+        padding: 0em;
+    }
+
+    .services {
+        padding: 0% 2% 0% 2%;
+        grid-gap: 1em;
+    }
+
+    .services img {
+        max-height: 20em;
+        width: 100%;
+    }
+
+    .trainers {
+        padding: 3em;
+    }
+
+    .expert_trainers .services img {
+        max-height: 20em;
+    }
+
+    footer .footer_section {
+        display: grid;
+    }
+
 }
 
-/* Mobile Layout: 320px. */
-@media only screen and (max-width: 767px) { 
- 
-    
+/* Responsive Clear */
+
+@media only screen and (min-width:481px) and (max-width:767px) {
+    .tagline .btn {
+        transform: translate(50%);
+    }
+    .order_form input,
+    .order_form select {
+        width: 150px;
+        display: block;
+        margin: auto;
+    }
+    .order_form {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .order_form button {
+        display: block;
+        margin: auto;
+    }
+    section.main {
+        display: grid;
+    }
+
+    .welcome {
+        padding: 5%;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 1em;
+    }
+
+    .trainers h3 {
+        padding-top: 0em;
+        line-height: normal;
+        font-size: 1.75em;
+    }
+
+    .trainers h1 {
+        font-size: 3em;
+        line-height: 1.5em;
+    }
+
+    .trainers_btn {
+        margin: -0.5em 0em;
+    }
+
+    .expert_trainers .services {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 3em;
+        text-align: center;
+    }
+
+    .expert_trainers .services img {
+        max-height: 18em;
+        max-width: 15em;
+    }
+    section.main article img {
+        max-width: 22em;
+        padding-left: 0px;
+        margin: auto;
+        display: block;
+    }
+    .contract_article {
+        flex-direction: column;
+    }
+
+    .contract {
+        background: url(../img/contract_bg1.jpg) no-repeat, url(../img/contract_bg2.jpg) no-repeat;
+        background-size: cover, 0;
+    }
+
+    footer .footer_section {
+        display: grid;
+    }
+}
+@media only screen and (max-width:480px) {
+    .tagline .btn {
+        transform: translate(50%);
+    }
+
+    .tagline h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+        color: var(--secondary);
+        display: inline;
+        line-height: 1.5em;
+    }
+
+    h2 {
+        font-size: 25px;
+        color: #000;
+        text-align: center;
+    }
+    .form h3 {
+        font-size: 1.5em;
+        padding-top: 0em;
+    }
+
+    .form h2 {
+        font-size: 2em;
+        text-transform: uppercase;
+        padding: 1em 0.5em;
+    }
+
+    .order_form input,
+    .order_form select {
+        width: 150px;
+        display: block;
+        margin: auto;
+    }
+
+    .order_form {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .order_form button {
+        display: block;
+        margin: auto;
+    }
+    article p {
+        font-size: 0.9em;
+    }
+
+    section.main article small {
+        font-size: 0.9em;
+    }
+
+    .trainers h3 {
+        font-size: 1em;
+    }
+
+    .trainers h1 {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+
+    section.main article img {
+        max-width: 15em;
+        padding-left: 0px;
+        margin: auto;
+        display: block;
+    }
+    .expert_trainers {
+        padding: 2em 3% 0em 2%;
+    }
+    .expert_trainers .services img {
+        max-height: 12em;
+        max-width: 15em;
+    }.expert_trainers .services h2 {
+	padding-top: 1em;
+	font-size: 1.5em;
 }
 
-/* Wide Mobile Layout: 480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) { 
+    .contract_article article p {
+        line-height: 1em;
+    }
 
+    section.main article img {
+        max-width: 15em;
+        padding-left: 30px;
+    }
+
+    .expert_trainers .services small {
+        padding-top: 0em;
+        line-height: 2.5em;
+    }
+
+    section.features {
+        background: #fff;
+        padding: 0em;
+    }
+
+    .services .content h3 {
+        font-size: 1.75em;
+        line-height: normal;
+    }
+    section.features small {
+        display: block;
+        padding-left: 5%;
+    }
+
+    section.features small {
+        line-height: 2em;
+        font-size: 1em;
+    }
+    .expert_trainers .title small {
+        line-height: 2em;
+        font-size: 1em;
+    }
+
+    section.main {
+        display: grid;
+    }
+
+    .welcome {
+        padding: 5%;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 0em;
+    }
+    .trainers {
+        padding: 3em;
+        background: url(../img/trainers_bg.jpg);
+        max-height: 36.5em;
+        height: 100%;
+        position: relative;
+    }
+    .trainers h3 {
+        padding-top: 0em;
+        line-height: normal;
+        font-size: 1em;
+    }
+
+    .trainers h1 {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+
+    .trainers_btn {
+        margin: -0.5em 0em;
+    }
+
+    .expert_trainers .services {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 3em;
+        text-align: center;
+    }
+
+    .expert_trainers .services img {
+        max-height: 12em;
+        max-width: 15em;
+    }
+
+    .contract_article {
+        flex-direction: column;
+    }
+
+    .contract {
+        background: url(../img/contract_bg1.jpg) no-repeat, url(../img/contract_bg2.jpg) no-repeat;
+        background-size: cover, 0;
+    }
+    footer .footer_section {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2em 1em;
+    }
+    footer .footer_section {
+        display: grid;
+    }
 }
